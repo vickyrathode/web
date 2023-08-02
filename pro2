@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+ 
+    <html>
+<head>
+    <title>Document</title>
+<style type="text/css">
+    body
+{
+background-image:url(logo.png);
+}
+.paragraph
+{
+background-image:url(logo.png);
+}
+
+.xlink{
+    cursor:crosshair;
+    
+}
+.hlink{
+    cursor:help
+} 
+b.headline
+{
+color:red;
+font-size:24px;
+ font-family:arial;
+text-decoration:underline;
+}
+
+hr{
+    color: black;
+    height: 10px;
+    width: auto;
+}
+
+
+
+A:link
+{
+color:black;
+text-decoration:none;
+}
+A:visited
+{
+color:black;
+text-decoration:none;
+}
+A:hover
+{
+color:rgb(246, 237, 237);
+box-shadow: 5px 2px rgb(144, 110, 177);
+text-decoration:underline;
+}
+A:active
+{
+color:red;
+ 
+text-decoration:underline;
+}
+
+</style>
+</head>
+<body>
+    <center>
+<b><a href="mypage.html" class="xlink"> crosslink</a><br>
+<a  href="mypage.html"  class="hlink">helplink</a><br></b>
+<b class="headline">this is heading style bold</b>
+
+<hr>
+
+<p>MS Ramaiah Institute of Technology</p>
+
+<hr>
+
+<a href="cse.html">COMPUTER SCIENCE ENGINEERING</a>
+<br>
+<a href="it.html">Information technology</a><br>
+<a href="ece.html"> Electronics and Communication Engineering</a><br>
+<a href="me.html">Master of Engineering</a><br>
+
+<hr>
+<center>
+    <strong>LAYER1 ON TOP</strong>
+    <div style="position:relative; font-size:30px;z-index:2; color:orange"> TOPLAYER</div>
+    <div style="position:relative; font-size:30px;top:0px;left:10px; z-index:1;color:orange">BOTTOMLAYER</div>
+    <strong> layer2 on top</strong>
+    <div style="position:relative; font-size:30px;z-index:3">TOPLAYER</div>
+    <div style="position:relative; font-size:30px;top:20px; left:10px;z-index:4"> BOTTOMLAYER</div></center>
+ </center>
+</body>
+</html>
