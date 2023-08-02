@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sum of Numbers</title>
+</head>
+<body>
+
+<script>
+  function getSumOfNumbers() {
+    let n = parseInt(prompt("Enter a number:"));
+    let sum = n;
+
+    while (confirm("Do you want to add another number?")) {
+      let additionalNumber = parseInt(prompt("Enter the next number:"));
+      if (!isNaN(additionalNumber)) {
+        sum += additionalNumber;
+      }
+    }
+
+    alert("The sum of all entered numbers is: " + sum);
+  }
+
+  getSumOfNumbers();
+</script>
+
+</body>
+</html>
